@@ -1,5 +1,5 @@
 package modelo;
 
-public enum Resultado {Todos,Nadie,Algunos
+public enum Resultado {TODOS,NADIE,ALGUNOS
 
 }
