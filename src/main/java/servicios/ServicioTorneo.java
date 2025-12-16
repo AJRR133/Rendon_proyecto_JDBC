@@ -14,62 +14,113 @@ public class ServicioTorneo {
 
     private RepositorioJugadores repoJugadores;
     private RepositorioPartida repoPartidas;
-    private static final int MAX_PARTIDAS = 5;
 
-    public ServicioTorneo(RepositorioJugadores repoJugadores, RepositorioPartida repoPartidas) {
-        this.repoJugadores = repoJugadores;
-        this.repoPartidas = repoPartidas;
-    }
-
-    // Agregar jugador
-    public void agregarJugador(Jugador jugador) throws SQLException {
-        repoJugadores.agregarJugador(jugador);
-    }
-
-    // Agregar partida con límite de 5
-    public void agregarPartida(Partida partida) throws SQLException, MiExcepcion {
-        if (repoPartidas.contarPartidas() >= MAX_PARTIDAS) {
-            throw new MiExcepcion("No se pueden agregar más de " + MAX_PARTIDAS + " partidas");
-        }
-        repoPartidas.agregarPartida(partida);
-    }
-
-    // Actualizar puntuación del narrador
-    public void actualizarPuntuacionNarrador(int jugadorId, Resultado resultado) throws SQLException {
-        if (resultado == Resultado.ALGUNOS) {
-            repoJugadores.actualizarPuntos(jugadorId, 3);
+    public ServicioTorneo() {
+        try {
+            this.repoJugadores = new RepositorioJugadores();
+            this.repoPartidas = new RepositorioPartida();
+        } catch (MiExcepcion e) {
+            System.err.println("Error inicializando el servicio: " + e.getMessage());
         }
     }
 
-    // Actualizar puntuación de no acertantes
-    public void actualizarPuntuacionNOAcertante(int jugadorId, Resultado resultado) throws SQLException {
-        if (resultado == Resultado.TODOS || resultado == Resultado.NADIE) {
-            repoJugadores.actualizarPuntos(jugadorId, 2);
+    // ----------------- JUGADORES -----------------
+    public void agregarJugador(Jugador jugador) {
+        try {
+            repoJugadores.agregarJugador(jugador);
+        } catch (SQLException e) {
+            System.err.println("Error al agregar jugador: " + e.getMessage());
         }
     }
 
-    // Actualizar puntuación de acertantes
-    public void actualizarPuntuacionAcertante(int jugadorId, Resultado resultado) throws SQLException {
-        if (resultado == Resultado.TODOS || resultado == Resultado.NADIE) {
-            repoJugadores.actualizarPuntos(jugadorId, 2);
-        } else if (resultado == Resultado.ALGUNOS) {
-            repoJugadores.actualizarPuntos(jugadorId, 3);
+    public List<Jugador> listarJugadores() {
+        try {
+            return repoJugadores.listarJugadores();
+        } catch (SQLException e) {
+            System.err.println("Error al listar jugadores: " + e.getMessage());
+            return List.of();
         }
     }
 
-    // Jugador con mayor puntuación
-    public Jugador jugadorConMayorPuntuacion() throws SQLException {
-        List<Jugador> jugadores = repoJugadores.listarJugadores();
+    public Jugador jugadorConMayorPuntuacion() {
+        List<Jugador> jugadores = listarJugadores();
         return jugadores.isEmpty() ? null : jugadores.get(0);
     }
 
-    // Listar jugadores ordenados por puntos
-    public List<Jugador> listarJugadores() throws SQLException {
-        return repoJugadores.listarJugadores();
+    public void actualizarPuntuacionNarrador(int jugadorId, Resultado resultado) {
+        try {
+            if (resultado == Resultado.ALGUNOS) {
+                repoJugadores.actualizarPuntos(jugadorId, 3);
+            }
+        } catch (SQLException e) {
+            System.err.println("Error al actualizar puntos del narrador: " + e.getMessage());
+        }
     }
 
-    // Listar partidas ordenadas por fecha
-    public List<Partida> listarPartidas() throws SQLException {
-        return repoPartidas.listarPartidas(repoJugadores);
+    public void actualizarPuntuacionAcertante(int jugadorId, Resultado resultado) {
+        try {
+            if (resultado == Resultado.ALGUNOS) {
+                repoJugadores.actualizarPuntos(jugadorId, 3);
+            } else if (resultado == Resultado.TODOS || resultado == Resultado.NADIE) {
+                repoJugadores.actualizarPuntos(jugadorId, 2);
+            }
+        } catch (SQLException e) {
+            System.err.println("Error al actualizar puntos de acertante: " + e.getMessage());
+        }
+    }
+
+    public void actualizarPuntuacionNOAcertante(int jugadorId, Resultado resultado) {
+        try {
+            if (resultado == Resultado.TODOS || resultado == Resultado.NADIE) {
+                repoJugadores.actualizarPuntos(jugadorId, 2);
+            }
+        } catch (SQLException e) {
+            System.err.println("Error al actualizar puntos de no acertante: " + e.getMessage());
+        }
+    }
+
+    // ----------------- PARTIDAS -----------------
+    public void agregarPartida(Partida partida) {
+        try {
+            repoPartidas.agregarPartida(partida);
+        } catch (MiExcepcion e) {
+            System.out.println("⚠ No se pudo agregar partida: " + e.getMessage());
+        } catch (SQLException e) {
+            System.err.println("Error al agregar partida: " + e.getMessage());
+        }
+    }
+
+    public List<Partida> listarPartidas() {
+        try {
+            return repoPartidas.listarPartidas(repoJugadores);
+        } catch (SQLException e) {
+            System.err.println("Error al listar partidas: " + e.getMessage());
+            return List.of();
+        }
+    }
+
+    public Partida obtenerPartidaPorId(int id) {
+        try {
+            return repoPartidas.obtenerPartidaPorId(id, repoJugadores);
+        } catch (SQLException e) {
+            System.err.println("Error al obtener partida: " + e.getMessage());
+            return null;
+        }
+    }
+
+    public void actualizarPartida(Partida partida) {
+        try {
+            repoPartidas.actualizarPartida(partida);
+        } catch (SQLException e) {
+            System.err.println("Error al actualizar partida: " + e.getMessage());
+        }
+    }
+
+    public void eliminarPartida(int id) {
+        try {
+            repoPartidas.eliminarPartida(id);
+        } catch (SQLException e) {
+            System.err.println("Error al eliminar partida: " + e.getMessage());
+        }
     }
 }
