@@ -4,4 +4,12 @@
   <artifactId>Rendon_proyecto_JDBC</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Rendon_proyecto_JDBC</name>
+  <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.29</version>
+        </dependency>
+    </dependencies>
+
 </project>
