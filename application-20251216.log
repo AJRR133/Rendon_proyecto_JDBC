@@ -1,0 +1,222 @@
+2025-12-16 20:25:19.230 [main] INFO  repositorio.RepositorioJugadores - Jugador agregado: Ana - ana@mail.com
+2025-12-16 20:25:19.231 [main] INFO  servicios.ServicioTorneo - Jugador agregado: Ana - ana@mail.com
+2025-12-16 20:25:19.234 [main] INFO  repositorio.RepositorioJugadores - Jugador agregado: Luis - luis@mail.com
+2025-12-16 20:25:19.234 [main] INFO  servicios.ServicioTorneo - Jugador agregado: Luis - luis@mail.com
+2025-12-16 20:25:19.236 [main] INFO  repositorio.RepositorioJugadores - Jugador agregado: Marta - marta@mail.com
+2025-12-16 20:25:19.236 [main] INFO  servicios.ServicioTorneo - Jugador agregado: Marta - marta@mail.com
+2025-12-16 20:25:19.238 [main] INFO  repositorio.RepositorioJugadores - Jugador agregado: Pedro - pedro@mail.com
+2025-12-16 20:25:19.238 [main] INFO  servicios.ServicioTorneo - Jugador agregado: Pedro - pedro@mail.com
+2025-12-16 20:25:19.239 [main] WARN  repositorio.RepositorioPartida - No se pueden agregar más de 5 partidas
+2025-12-16 20:25:19.239 [main] WARN  servicios.ServicioTorneo - No se pudo agregar partida: null
+2025-12-16 20:25:19.241 [main] WARN  repositorio.RepositorioPartida - No se pueden agregar más de 5 partidas
+2025-12-16 20:25:19.241 [main] WARN  servicios.ServicioTorneo - No se pudo agregar partida: null
+2025-12-16 20:25:19.241 [main] WARN  repositorio.RepositorioPartida - No se pueden agregar más de 5 partidas
+2025-12-16 20:25:19.241 [main] WARN  servicios.ServicioTorneo - No se pudo agregar partida: null
+2025-12-16 20:25:19.242 [main] WARN  repositorio.RepositorioPartida - No se pueden agregar más de 5 partidas
+2025-12-16 20:25:19.242 [main] WARN  servicios.ServicioTorneo - No se pudo agregar partida: null
+2025-12-16 20:25:19.242 [main] WARN  repositorio.RepositorioPartida - No se pueden agregar más de 5 partidas
+2025-12-16 20:25:19.242 [main] WARN  servicios.ServicioTorneo - No se pudo agregar partida: null
+2025-12-16 20:25:19.242 [main] WARN  repositorio.RepositorioPartida - No se pueden agregar más de 5 partidas
+2025-12-16 20:25:19.242 [main] WARN  servicios.ServicioTorneo - No se pudo agregar partida: null
+2025-12-16 20:25:19.245 [main] INFO  repositorio.RepositorioJugadores - Puntos actualizados para jugador ID 33: +3
+2025-12-16 20:25:19.245 [main] INFO  servicios.ServicioTorneo - Se actualizaron 3 puntos al narrador con id 33
+2025-12-16 20:25:19.247 [main] INFO  repositorio.RepositorioJugadores - Puntos actualizados para jugador ID 34: +3
+2025-12-16 20:25:19.247 [main] INFO  servicios.ServicioTorneo - Se actualizaron puntos al acertante con id 34
+2025-12-16 20:25:19.249 [main] INFO  repositorio.RepositorioJugadores - Puntos actualizados para jugador ID 35: +2
+2025-12-16 20:25:19.249 [main] INFO  servicios.ServicioTorneo - Se actualizaron 2 puntos al no acertante con id 35
+2025-12-16 20:25:19.250 [main] INFO  controlador.GestionaTorneo -  Jugador con mayor puntuación: Ana - 3
+2025-12-16 20:25:19.252 [main] INFO  controlador.GestionaTorneo -  Listado de jugadores y sus puntos:
+2025-12-16 20:25:19.252 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:25:19.252 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:25:19.252 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:25:19.253 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:25:19.253 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:25:19.253 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:25:19.253 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:25:19.253 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:25:19.253 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:25:19.253 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:25:19.253 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:25:19.253 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:25:19.253 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:25:19.255 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:25:19.255 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:25:19.255 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:25:19.255 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:25:19.255 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:25:19.255 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:25:19.255 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:25:19.255 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:25:19.256 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:25:19.256 [main] INFO  controlador.GestionaTorneo - Marta -> 0
+2025-12-16 20:25:19.256 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:25:19.256 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:25:19.256 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:25:19.256 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:25:19.256 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:25:19.256 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:25:19.256 [main] INFO  controlador.GestionaTorneo - Marta -> 0
+2025-12-16 20:25:19.256 [main] INFO  controlador.GestionaTorneo - Ana -> 0
+2025-12-16 20:25:19.256 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:25:19.256 [main] INFO  controlador.GestionaTorneo - Luis -> 0
+2025-12-16 20:25:19.256 [main] INFO  controlador.GestionaTorneo - Ana -> 0
+2025-12-16 20:25:19.256 [main] INFO  controlador.GestionaTorneo - Luis -> 0
+2025-12-16 20:25:19.257 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:25:19.262 [main] INFO  controlador.GestionaTorneo -  Listado de partidas ordenadas por fecha:
+2025-12-16 20:25:19.262 [main] INFO  controlador.GestionaTorneo - 2025-12-01 | Narrador: Ana | Resultado: ALGUNOS
+2025-12-16 20:25:19.262 [main] INFO  controlador.GestionaTorneo - 2025-12-02 | Narrador: Luis | Resultado: TODOS
+2025-12-16 20:25:19.262 [main] INFO  controlador.GestionaTorneo - 2025-12-03 | Narrador: Marta | Resultado: NADIE
+2025-12-16 20:25:19.263 [main] INFO  controlador.GestionaTorneo - 2025-12-04 | Narrador: Pedro | Resultado: ALGUNOS
+2025-12-16 20:25:19.263 [main] INFO  controlador.GestionaTorneo - 2025-12-05 | Narrador: Ana | Resultado: TODOS
+2025-12-16 20:27:39.145 [main] INFO  repositorio.RepositorioJugadores - Jugador agregado: Ana - ana@mail.com
+2025-12-16 20:27:39.147 [main] INFO  servicios.ServicioTorneo - Jugador agregado: Ana - ana@mail.com
+2025-12-16 20:27:39.151 [main] INFO  repositorio.RepositorioJugadores - Jugador agregado: Luis - luis@mail.com
+2025-12-16 20:27:39.151 [main] INFO  servicios.ServicioTorneo - Jugador agregado: Luis - luis@mail.com
+2025-12-16 20:27:39.153 [main] INFO  repositorio.RepositorioJugadores - Jugador agregado: Marta - marta@mail.com
+2025-12-16 20:27:39.153 [main] INFO  servicios.ServicioTorneo - Jugador agregado: Marta - marta@mail.com
+2025-12-16 20:27:39.155 [main] INFO  repositorio.RepositorioJugadores - Jugador agregado: Pedro - pedro@mail.com
+2025-12-16 20:27:39.155 [main] INFO  servicios.ServicioTorneo - Jugador agregado: Pedro - pedro@mail.com
+2025-12-16 20:27:39.157 [main] WARN  repositorio.RepositorioPartida - No se pueden agregar más de 5 partidas
+2025-12-16 20:27:39.157 [main] WARN  servicios.ServicioTorneo - No se pudo agregar partida: null
+2025-12-16 20:27:39.158 [main] WARN  repositorio.RepositorioPartida - No se pueden agregar más de 5 partidas
+2025-12-16 20:27:39.158 [main] WARN  servicios.ServicioTorneo - No se pudo agregar partida: null
+2025-12-16 20:27:39.158 [main] WARN  repositorio.RepositorioPartida - No se pueden agregar más de 5 partidas
+2025-12-16 20:27:39.160 [main] WARN  servicios.ServicioTorneo - No se pudo agregar partida: null
+2025-12-16 20:27:39.160 [main] WARN  repositorio.RepositorioPartida - No se pueden agregar más de 5 partidas
+2025-12-16 20:27:39.160 [main] WARN  servicios.ServicioTorneo - No se pudo agregar partida: null
+2025-12-16 20:27:39.160 [main] WARN  repositorio.RepositorioPartida - No se pueden agregar más de 5 partidas
+2025-12-16 20:27:39.160 [main] WARN  servicios.ServicioTorneo - No se pudo agregar partida: null
+2025-12-16 20:27:39.161 [main] WARN  repositorio.RepositorioPartida - No se pueden agregar más de 5 partidas
+2025-12-16 20:27:39.161 [main] WARN  servicios.ServicioTorneo - No se pudo agregar partida: null
+2025-12-16 20:27:39.164 [main] INFO  repositorio.RepositorioJugadores - Puntos actualizados para jugador ID 37: +3
+2025-12-16 20:27:39.164 [main] INFO  servicios.ServicioTorneo - Se actualizaron 3 puntos al narrador con id 37
+2025-12-16 20:27:39.166 [main] INFO  repositorio.RepositorioJugadores - Puntos actualizados para jugador ID 38: +3
+2025-12-16 20:27:39.167 [main] INFO  servicios.ServicioTorneo - Se actualizaron puntos al acertante con id 38
+2025-12-16 20:27:39.169 [main] INFO  repositorio.RepositorioJugadores - Puntos actualizados para jugador ID 39: +2
+2025-12-16 20:27:39.169 [main] INFO  servicios.ServicioTorneo - Se actualizaron 2 puntos al no acertante con id 39
+2025-12-16 20:27:39.171 [main] INFO  controlador.GestionaTorneo -  Jugador con mayor puntuación: Ana - 3
+2025-12-16 20:27:39.173 [main] INFO  controlador.GestionaTorneo -  Listado de jugadores y sus puntos:
+2025-12-16 20:27:39.173 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:27:39.173 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:27:39.173 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:27:39.174 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:27:39.174 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:27:39.174 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:27:39.174 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:27:39.174 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:27:39.174 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:27:39.174 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:27:39.174 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:27:39.174 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:27:39.175 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:27:39.175 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:27:39.175 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:27:39.175 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:27:39.175 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:27:39.175 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:27:39.175 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:27:39.175 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:27:39.175 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:27:39.175 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:27:39.175 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:27:39.176 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:27:39.176 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:27:39.176 [main] INFO  controlador.GestionaTorneo - Ana -> 0
+2025-12-16 20:27:39.176 [main] INFO  controlador.GestionaTorneo - Luis -> 0
+2025-12-16 20:27:39.176 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:27:39.176 [main] INFO  controlador.GestionaTorneo - Marta -> 0
+2025-12-16 20:27:39.176 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:27:39.176 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:27:39.176 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:27:39.176 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:27:39.176 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:27:39.177 [main] INFO  controlador.GestionaTorneo - Ana -> 0
+2025-12-16 20:27:39.177 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:27:39.177 [main] INFO  controlador.GestionaTorneo - Luis -> 0
+2025-12-16 20:27:39.177 [main] INFO  controlador.GestionaTorneo - Marta -> 0
+2025-12-16 20:27:39.177 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:27:39.177 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:27:39.182 [main] INFO  controlador.GestionaTorneo -  Listado de partidas ordenadas por fecha:
+2025-12-16 20:27:39.182 [main] INFO  controlador.GestionaTorneo - 2025-12-01 | Narrador: Ana | Resultado: ALGUNOS
+2025-12-16 20:27:39.184 [main] INFO  controlador.GestionaTorneo - 2025-12-02 | Narrador: Luis | Resultado: TODOS
+2025-12-16 20:27:39.184 [main] INFO  controlador.GestionaTorneo - 2025-12-03 | Narrador: Marta | Resultado: NADIE
+2025-12-16 20:27:39.184 [main] INFO  controlador.GestionaTorneo - 2025-12-04 | Narrador: Pedro | Resultado: ALGUNOS
+2025-12-16 20:27:39.184 [main] INFO  controlador.GestionaTorneo - 2025-12-05 | Narrador: Ana | Resultado: TODOS
+2025-12-16 20:27:52.532 [main] INFO  repositorio.RepositorioJugadores - Jugador agregado: Ana - ana@mail.com
+2025-12-16 20:27:52.533 [main] INFO  servicios.ServicioTorneo - Jugador agregado: Ana - ana@mail.com
+2025-12-16 20:27:52.535 [main] INFO  repositorio.RepositorioJugadores - Jugador agregado: Luis - luis@mail.com
+2025-12-16 20:27:52.536 [main] INFO  servicios.ServicioTorneo - Jugador agregado: Luis - luis@mail.com
+2025-12-16 20:27:52.538 [main] INFO  repositorio.RepositorioJugadores - Jugador agregado: Marta - marta@mail.com
+2025-12-16 20:27:52.538 [main] INFO  servicios.ServicioTorneo - Jugador agregado: Marta - marta@mail.com
+2025-12-16 20:27:52.540 [main] INFO  repositorio.RepositorioJugadores - Jugador agregado: Pedro - pedro@mail.com
+2025-12-16 20:27:52.541 [main] INFO  servicios.ServicioTorneo - Jugador agregado: Pedro - pedro@mail.com
+2025-12-16 20:27:52.542 [main] WARN  repositorio.RepositorioPartida - No se pueden agregar más de 5 partidas
+2025-12-16 20:27:52.542 [main] WARN  servicios.ServicioTorneo - No se pudo agregar partida: null
+2025-12-16 20:27:52.543 [main] WARN  repositorio.RepositorioPartida - No se pueden agregar más de 5 partidas
+2025-12-16 20:27:52.543 [main] WARN  servicios.ServicioTorneo - No se pudo agregar partida: null
+2025-12-16 20:27:52.543 [main] WARN  repositorio.RepositorioPartida - No se pueden agregar más de 5 partidas
+2025-12-16 20:27:52.543 [main] WARN  servicios.ServicioTorneo - No se pudo agregar partida: null
+2025-12-16 20:27:52.545 [main] WARN  repositorio.RepositorioPartida - No se pueden agregar más de 5 partidas
+2025-12-16 20:27:52.545 [main] WARN  servicios.ServicioTorneo - No se pudo agregar partida: null
+2025-12-16 20:27:52.545 [main] WARN  repositorio.RepositorioPartida - No se pueden agregar más de 5 partidas
+2025-12-16 20:27:52.545 [main] WARN  servicios.ServicioTorneo - No se pudo agregar partida: null
+2025-12-16 20:27:52.545 [main] WARN  repositorio.RepositorioPartida - No se pueden agregar más de 5 partidas
+2025-12-16 20:27:52.545 [main] WARN  servicios.ServicioTorneo - No se pudo agregar partida: null
+2025-12-16 20:27:52.548 [main] INFO  repositorio.RepositorioJugadores - Puntos actualizados para jugador ID 41: +3
+2025-12-16 20:27:52.548 [main] INFO  servicios.ServicioTorneo - Se actualizaron 3 puntos al narrador con id 41
+2025-12-16 20:27:52.551 [main] INFO  repositorio.RepositorioJugadores - Puntos actualizados para jugador ID 42: +3
+2025-12-16 20:27:52.552 [main] INFO  servicios.ServicioTorneo - Se actualizaron puntos al acertante con id 42
+2025-12-16 20:27:52.553 [main] INFO  repositorio.RepositorioJugadores - Puntos actualizados para jugador ID 43: +2
+2025-12-16 20:27:52.554 [main] INFO  servicios.ServicioTorneo - Se actualizaron 2 puntos al no acertante con id 43
+2025-12-16 20:27:52.555 [main] INFO  controlador.GestionaTorneo -  Jugador con mayor puntuación: Ana - 3
+2025-12-16 20:27:52.557 [main] INFO  controlador.GestionaTorneo -  Listado de jugadores y sus puntos:
+2025-12-16 20:27:52.557 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:27:52.557 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:27:52.557 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:27:52.557 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:27:52.557 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:27:52.557 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:27:52.557 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:27:52.558 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:27:52.558 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:27:52.558 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:27:52.558 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:27:52.558 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:27:52.558 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:27:52.558 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:27:52.558 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:27:52.558 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:27:52.558 [main] INFO  controlador.GestionaTorneo - Ana -> 3
+2025-12-16 20:27:52.558 [main] INFO  controlador.GestionaTorneo - Luis -> 3
+2025-12-16 20:27:52.558 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:27:52.558 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:27:52.559 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:27:52.559 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:27:52.559 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:27:52.559 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:27:52.559 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:27:52.559 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:27:52.559 [main] INFO  controlador.GestionaTorneo - Marta -> 2
+2025-12-16 20:27:52.559 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:27:52.559 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:27:52.559 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:27:52.559 [main] INFO  controlador.GestionaTorneo - Luis -> 0
+2025-12-16 20:27:52.559 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:27:52.559 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:27:52.559 [main] INFO  controlador.GestionaTorneo - Luis -> 0
+2025-12-16 20:27:52.559 [main] INFO  controlador.GestionaTorneo - Ana -> 0
+2025-12-16 20:27:52.559 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:27:52.561 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:27:52.561 [main] INFO  controlador.GestionaTorneo - Marta -> 0
+2025-12-16 20:27:52.561 [main] INFO  controlador.GestionaTorneo - Marta -> 0
+2025-12-16 20:27:52.561 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:27:52.561 [main] INFO  controlador.GestionaTorneo - Ana -> 0
+2025-12-16 20:27:52.561 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:27:52.561 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:27:52.561 [main] INFO  controlador.GestionaTorneo - Pedro -> 0
+2025-12-16 20:27:52.566 [main] INFO  controlador.GestionaTorneo -  Listado de partidas ordenadas por fecha:
+2025-12-16 20:27:52.566 [main] INFO  controlador.GestionaTorneo - 2025-12-01 | Narrador: Ana | Resultado: ALGUNOS
+2025-12-16 20:27:52.566 [main] INFO  controlador.GestionaTorneo - 2025-12-02 | Narrador: Luis | Resultado: TODOS
+2025-12-16 20:27:52.566 [main] INFO  controlador.GestionaTorneo - 2025-12-03 | Narrador: Marta | Resultado: NADIE
+2025-12-16 20:27:52.566 [main] INFO  controlador.GestionaTorneo - 2025-12-04 | Narrador: Pedro | Resultado: ALGUNOS
+2025-12-16 20:27:52.566 [main] INFO  controlador.GestionaTorneo - 2025-12-05 | Narrador: Ana | Resultado: TODOS

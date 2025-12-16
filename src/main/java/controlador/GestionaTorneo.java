@@ -3,73 +3,59 @@ package controlador;
 import modelo.Jugador;
 import modelo.Partida;
 import modelo.Resultado;
-import repositorio.RepositorioJugadores;
-import repositorio.RepositorioPartida;
 import servicios.ServicioTorneo;
-import exceptions.MiExcepcion;
 
-import java.sql.SQLException;
 import java.util.List;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class GestionaTorneo {
 
+    private static final Logger logger = LogManager.getLogger(GestionaTorneo.class);
+
     public static void main(String[] args) {
-        try {
-            // Inicializar repositorios y servicio
-            RepositorioJugadores repoJugadores = new RepositorioJugadores();
-            RepositorioPartida repoPartidas = new RepositorioPartida();
-            ServicioTorneo servicio = new ServicioTorneo(repoJugadores, repoPartidas);
 
-            // Crear jugadores usando constructor correcto
-            Jugador j1 = new Jugador(0, 0, "Ana", "ana@mail.com");
-            Jugador j2 = new Jugador(0, 0, "Luis", "luis@mail.com");
-            Jugador j3 = new Jugador(0, 0, "Marta", "marta@mail.com");
-            Jugador j4 = new Jugador(0, 0, "Pedro", "pedro@mail.com");
+        ServicioTorneo servicio = new ServicioTorneo();
 
-            servicio.agregarJugador(j1);
-            servicio.agregarJugador(j2);
-            servicio.agregarJugador(j3);
-            servicio.agregarJugador(j4);
+        Jugador j1 = new Jugador(0, 0, "Ana", "ana@mail.com");
+        Jugador j2 = new Jugador(0, 0, "Luis", "luis@mail.com");
+        Jugador j3 = new Jugador(0, 0, "Marta", "marta@mail.com");
+        Jugador j4 = new Jugador(0, 0, "Pedro", "pedro@mail.com");
 
-            // Crear partidas
-            servicio.agregarPartida(new Partida(0, j1, "2025-12-01", Resultado.ALGUNOS));
-            servicio.agregarPartida(new Partida(0, j2, "2025-12-02", Resultado.TODOS));
-            servicio.agregarPartida(new Partida(0, j3, "2025-12-03", Resultado.NADIE));
-            servicio.agregarPartida(new Partida(0, j4, "2025-12-04", Resultado.ALGUNOS));
-            servicio.agregarPartida(new Partida(0, j1, "2025-12-05", Resultado.TODOS));
+        servicio.agregarJugador(j1);
+        servicio.agregarJugador(j2);
+        servicio.agregarJugador(j3);
+        servicio.agregarJugador(j4);
 
-            // Intentar agregar sexta partida para probar excepción
-            try {
-                servicio.agregarPartida(new Partida(0, j2, "2025-12-06", Resultado.ALGUNOS));
-            } catch (MiExcepcion e) {
-                System.out.println("Excepción al agregar sexta partida: " + e.getMessage());
-            }
+        servicio.agregarPartida(new Partida(0, j1, "2025-12-01", Resultado.ALGUNOS));
+        servicio.agregarPartida(new Partida(0, j2, "2025-12-02", Resultado.TODOS));
+        servicio.agregarPartida(new Partida(0, j3, "2025-12-03", Resultado.NADIE));
+        servicio.agregarPartida(new Partida(0, j4, "2025-12-04", Resultado.ALGUNOS));
+        servicio.agregarPartida(new Partida(0, j1, "2025-12-05", Resultado.TODOS));
+        servicio.agregarPartida(new Partida(0, j2, "2025-12-06", Resultado.ALGUNOS)); // intento sexta partida
 
-            // Actualizar puntuaciones ejemplo
-            servicio.actualizarPuntuacionNarrador(j1.getId(), Resultado.ALGUNOS);
-            servicio.actualizarPuntuacionAcertante(j2.getId(), Resultado.ALGUNOS);
-            servicio.actualizarPuntuacionNOAcertante(j3.getId(), Resultado.TODOS);
+        servicio.actualizarPuntuacionNarrador(j1.getId(), Resultado.ALGUNOS);
+        servicio.actualizarPuntuacionAcertante(j2.getId(), Resultado.ALGUNOS);
+        servicio.actualizarPuntuacionNOAcertante(j3.getId(), Resultado.TODOS);
 
-            // Mostrar jugador con mayor puntuación
-            Jugador top = servicio.jugadorConMayorPuntuacion();
-            System.out.println("\nJugador con mayor puntuación: " + top.getNombre() + " - " + top.getPuntostotales());
+        Jugador top = servicio.jugadorConMayorPuntuacion();
+        if (top != null) {
+            logger.info(" Jugador con mayor puntuación: {} - {}", top.getNombre(), top.getPuntostotales());
+        } else {
+            logger.warn("No hay jugadores con puntuación registrada.");
+        }
 
-            // Listar jugadores
-            System.out.println("\nListado de jugadores:");
-            List<Jugador> jugadores = servicio.listarJugadores();
-            for (Jugador j : jugadores) {
-                System.out.println(j.getNombre() + " - " + j.getPuntostotales());
-            }
+        List<Jugador> jugadores = servicio.listarJugadores();
+        logger.info(" Listado de jugadores y sus puntos:");
+        for (Jugador j : jugadores) {
+            logger.info("{} -> {}", j.getNombre(), j.getPuntostotales());
+        }
 
-            // Listar partidas
-            System.out.println("\nListado de partidas:");
-            List<Partida> partidas = servicio.listarPartidas();
-            for (Partida p : partidas) {
-                System.out.println(p.getFecha() + " - " + p.getNarrador().getNombre() + " - " + p.getResultado());
-            }
-
-        } catch (SQLException | MiExcepcion e) {
-            e.printStackTrace();
+        List<Partida> partidas = servicio.listarPartidas();
+        logger.info(" Listado de partidas ordenadas por fecha:");
+        for (Partida p : partidas) {
+            logger.info("{} | Narrador: {} | Resultado: {}", p.getFecha(), p.getNarrador().getNombre(), p.getResultado());
         }
     }
 }
